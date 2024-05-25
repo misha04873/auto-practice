@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
        ChromeDriver driver = new ChromeDriver();
        driver.get("https://www.google.com");
-       driver.manage().window().maximize();
-       driver.findElement(By.name("q")).sendKeys("webdriver"); 
+//       driver.manage().window().maximize();
+       driver.findElement(By.name("q")).sendKeys("webdriver");
        driver.findElement(By.name("q")).submit();
        driver.quit();
     }
